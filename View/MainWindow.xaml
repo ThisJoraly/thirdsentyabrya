@@ -1,0 +1,31 @@
+﻿<Window x:Class="thirdsentyabrya.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:thirdsentyabrya" 
+        xmlns:viewmodel="clr-namespace:thirdsentyabrya.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:MainViewModel}"
+        mc:Ignorable="d"
+        Title="Calendar" Height="400" Width="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Command="{Binding PreviouseMonth}">
+            <TextBlock Text="Предыдущий месяц" TextWrapping="Wrap" TextAlignment="Center" FontSize="10"/>
+        </Button>
+        <TextBlock Grid.Column="1" TextAlignment="Center" VerticalAlignment="Center" Text="{Binding Date, StringFormat='{}{0:MMMM, yyyy}'}" TextWrapping="Wrap" Padding="5" FontSize="10"/>
+        <Button Grid.Column="2" Command="{Binding NextMonth}">
+            <TextBlock Text="Следующий месяц" TextWrapping="Wrap" TextAlignment="Center" FontSize="10"/>
+        </Button>
+        <WrapPanel Grid.Row="1" Grid.ColumnSpan="3">
+            
+        </WrapPanel>
+    </Grid>
+</Window>

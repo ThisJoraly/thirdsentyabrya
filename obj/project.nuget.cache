@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "xY/CdhJKSmP5FuuZ+8TBJsekk3uDhx/fZl61dQRAKEbS7DS4WDTGUEGybqeFBAMHeMq7ZYguVcOy0AP9UsAHmA==",
+  "dgSpecHash": "FdH2DuZfp50JDnXjHyW39nFD9YkMSIaSr0U9N8Urt3ttS2Fi1oyOWo+gidGWn1ggzJCmmOtN60pN98gWduHbZA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Artyom\\source\\repos\\thirdsentyabrya\\thirdsentyabrya.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\ovtsu\\Downloads\\thirdsentyabrya\\thirdsentyabrya.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ovtsu\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\ovtsu\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\ovtsu\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\ovtsu\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.17\\microsoft.netcore.app.host.win-x64.7.0.17.nupkg.sha512"
+  ],
   "logs": []
 }

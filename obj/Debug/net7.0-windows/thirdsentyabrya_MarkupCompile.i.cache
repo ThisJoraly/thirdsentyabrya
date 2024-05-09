@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Artyom\source\repos\thirdsentyabrya\obj\Debug\net7.0-windows\
+C:\Users\ovtsu\Downloads\thirdsentyabrya\obj\Debug\net7.0-windows\
 thirdsentyabrya
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-C:\Users\Artyom\source\repos\thirdsentyabrya\App.xaml
-11407045341
+C:\Users\ovtsu\Downloads\thirdsentyabrya\App.xaml
+21248483459
 
-101665428350
-198-651932399
-MainWindow.xaml;
+10-671830480
+198-97997552
+View\DayCard.xaml;View\MainWindow.xaml;
 
 False
 

@@ -1,51 +1,51 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Input;
-using thirdsentyabrya.Model;
-using thirdsentyabrya.Util;
+using System.Windows;
+using System.Windows.Controls.Primitives;
+using thirdsentyabrya.View;
+using thirdsentyabrya.ViewModel.Helpers;
 
 namespace thirdsentyabrya.ViewModel
 {
-    public class MainViewModel : ViewModelBase
+    internal class MainViewModel : BindingHelper
     {
-        private ObservableCollection<DayModel> _days;
-        public ObservableCollection<DayModel> Days
-        {
-            get => _days;
-            set
-            {
-                _days = value;
-            }
-        }
+        public BindableCommand PreviouseMonth { get; set; }
+        public BindableCommand NextMonth { get; set; }
 
-        public ICommand PreviousMonthCommand { get; private set; }
-        public ICommand NextMonthCommand { get; private set; }
 
         public MainViewModel()
         {
-            Days = new ObservableCollection<DayModel>();
-            PreviousMonthCommand = new RelayCommand(PreviousMonth);
-            NextMonthCommand = new RelayCommand(NextMonth);
-            LoadDays();
+            Date = DateTime.Now;
+
+            PreviouseMonth = new BindableCommand(_ => Previouse());
+            NextMonth = new BindableCommand(_ => Next());
         }
 
-        private void LoadDays()
+        private DateTime date;
+        public DateTime Date
         {
-            // TODO сделать
+            get => date; 
+            set
+            {
+                if (date != value)
+                {
+                    date = value;
+                    OnPropertyChanged(nameof(date));
+                }
+            }
         }
 
-        private void PreviousMonth()
+        public void Previouse()
         {
-            // TODO сделать
+            MessageBox.Show("Должно перелистываться назад");
         }
 
-        private void NextMonth()
+        public void Next()
         {
-            // TODO сделать
+            MessageBox.Show("Должно перелистываться вперёд");
         }
     }
 }
