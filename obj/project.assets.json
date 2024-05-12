@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ovtsu\\Downloads\\thirdsentyabrya\\thirdsentyabrya.csproj",
+      "projectUniqueName": "C:\\Users\\ovtsu\\Source\\Repos\\thirdsentyabrya\\thirdsentyabrya.csproj",
       "projectName": "thirdsentyabrya",
-      "projectPath": "C:\\Users\\ovtsu\\Downloads\\thirdsentyabrya\\thirdsentyabrya.csproj",
+      "projectPath": "C:\\Users\\ovtsu\\Source\\Repos\\thirdsentyabrya\\thirdsentyabrya.csproj",
       "packagesPath": "C:\\Users\\ovtsu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ovtsu\\Downloads\\thirdsentyabrya\\obj\\",
+      "outputPath": "C:\\Users\\ovtsu\\Source\\Repos\\thirdsentyabrya\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ovtsu\\AppData\\Roaming\\NuGet\\NuGet.Config",

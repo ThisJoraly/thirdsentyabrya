@@ -22,7 +22,7 @@ namespace thirdsentyabrya.View
     {
         public DayCard()
         {
-
+            InitializeComponent();
         }
     }
 }
