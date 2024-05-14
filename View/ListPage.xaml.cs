@@ -12,19 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using thirdsentyabrya.ViewModel;
 
-namespace thirdsentyabrya
+namespace thirdsentyabrya.View
 {
     /// <summary>
-    /// настя лох
+    /// Логика взаимодействия для ListPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ListPage : Page
     {
-        public MainWindow()
+        public ListPage()
         {
             InitializeComponent();
-            DataContext = new MainWindowViewModel();
         }
     }
 }

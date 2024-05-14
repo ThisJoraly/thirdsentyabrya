@@ -5,8 +5,21 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:thirdsentyabrya.View"
              mc:Ignorable="d" 
-             Height="50" Width="50">
-    <Grid Margin="5" Background="Gray">
-        <TextBlock Text="{Binding Day}"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+             Height="70" Width="70">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Номер дня" FontSize="10" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Image Grid.Row="1" Source="C:\Users\ovtsu\source\repos\thirdsentyabrya\Images\791aac25e65b2669a74bba5b97ab8d1c.jpg" Width="Auto" Height="Auto"/>
+        <Button x:Name="ButtonDay" Grid.RowSpan="2" Background="Transparent" Click="ButtonDay_Click">
+            <Button.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Посмотреть день" Command="{Binding OpenDay}"/>
+                    <MenuItem Header="Отчистить день" Command="{Binding ClearDay}"/>
+                </ContextMenu>
+            </Button.ContextMenu>
+        </Button>
     </Grid>
 </UserControl>

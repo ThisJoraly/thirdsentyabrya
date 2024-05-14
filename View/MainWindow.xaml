@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:thirdsentyabrya" 
-        xmlns:viewmodel="clr-namespace:thirdsentyabrya.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:MainViewModel}"
+        xmlns:viewmodel="clr-namespace:thirdsentyabrya.ViewModel"
         mc:Ignorable="d"
         Title="Calendar" Height="400" Width="300">
     <Grid>
@@ -24,8 +24,18 @@
         <Button Grid.Column="2" Command="{Binding NextMonth}">
             <TextBlock Text="Следующий месяц" TextWrapping="Wrap" TextAlignment="Center" FontSize="10"/>
         </Button>
-        <WrapPanel Grid.Row="1" Grid.ColumnSpan="3">
-            
-        </WrapPanel>
+        <ItemsControl ItemsSource="{Binding days}" Grid.Row="1" Grid.ColumnSpan="3">
+            <ItemsControl.ItemsPanel  >
+                <ItemsPanelTemplate >
+                    <WrapPanel />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate >
+                    <TextBlock Text="{Binding days}" Margin="5" FontWeight="Bold"/>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <Frame x:Name="FramePage" NavigationUIVisibility="Hidden" Grid.Row="1" Grid.ColumnSpan="3"/>
     </Grid>
 </Window>

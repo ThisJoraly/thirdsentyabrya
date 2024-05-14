@@ -10,13 +10,13 @@ using thirdsentyabrya.ViewModel.Helpers;
 
 namespace thirdsentyabrya.ViewModel
 {
-    internal class MainViewModel : BindingHelper
+    internal class MainWindowViewModel : BindingHelper
     {
         public BindableCommand PreviouseMonth { get; set; }
         public BindableCommand NextMonth { get; set; }
 
 
-        public MainViewModel()
+        public MainWindowViewModel()
         {
             Date = DateTime.Now;
 
@@ -40,12 +40,12 @@ namespace thirdsentyabrya.ViewModel
 
         public void Previouse()
         {
-            MessageBox.Show("Должно перелистываться назад");
+           //Должно перелистываться назад
         }
 
         public void Next()
         {
-            MessageBox.Show("Должно перелистываться вперёд");
+            //Должно перелистываться вперёд
         }
     }
 }

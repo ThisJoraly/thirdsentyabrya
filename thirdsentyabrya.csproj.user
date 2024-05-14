@@ -10,9 +10,15 @@
     <Compile Update="View\DayCard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\ListPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="View\DayCard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ListPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\MainWindow.xaml">

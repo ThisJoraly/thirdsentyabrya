@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = thirdsentyabrya
-build_property.ProjectDir = C:\Users\ovtsu\Source\Repos\thirdsentyabrya\
+build_property.ProjectDir = C:\Users\ovtsu\source\repos\thirdsentyabrya\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

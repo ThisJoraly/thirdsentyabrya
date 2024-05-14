@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using thirdsentyabrya.ViewModel;
 
 namespace thirdsentyabrya.View
 {
@@ -23,6 +24,14 @@ namespace thirdsentyabrya.View
         public DayCard()
         {
             InitializeComponent();
+            DataContext = new DayCardViewModel();
+        }
+
+        private void ButtonDay_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            Frame framePage = mainWindow.FramePage;
+            framePage.Content = new Frame();
         }
     }
 }

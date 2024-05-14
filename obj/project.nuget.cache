@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ktksV/j8jYKc82HsZd0ILbWSg4pJYaVNDWjTmFWV4X8kpKJOdyJbDsMyeibD0OjGbKfHS7BC9l27EjNAFtOE4A==",
+  "dgSpecHash": "g8rgFRie7VdX9DMy54M5rOaQ1ZTHEryXCTHLTbaTE1E89wCKSvU6G6q/vlgoZlF3+q4luPCUyeEVeqss/T3RNA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ovtsu\\Source\\Repos\\thirdsentyabrya\\thirdsentyabrya.csproj",
+  "projectFilePath": "C:\\Users\\ovtsu\\source\\repos\\thirdsentyabrya\\thirdsentyabrya.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ovtsu\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
     "C:\\Users\\ovtsu\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
