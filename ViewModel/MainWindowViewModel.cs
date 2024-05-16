@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls.Primitives;
 using thirdsentyabrya.View;
+using thirdsentyabrya.Model;
 using thirdsentyabrya.ViewModel.Helpers;
 
 namespace thirdsentyabrya.ViewModel
@@ -15,6 +16,34 @@ namespace thirdsentyabrya.ViewModel
         public BindableCommand PreviouseMonth { get; set; }
         public BindableCommand NextMonth { get; set; }
 
+        private DateTime _selectedDate;
+        public DateTime SelectedDate
+        {
+            get => _selectedDate;
+            set
+            {
+                if (_selectedDate != value)
+                {
+                    _selectedDate = value;
+                    OnPropertyChanged(nameof(SelectedDate));
+                }
+            }
+        }
+
+        private List<Day> _days;
+        public List<Day> Days
+        {
+            get => _days;
+            set
+            {
+                if (_days != value)
+                {
+                    _days = value;
+                    OnPropertyChanged(nameof(Days));
+                }
+            }
+        }
+
 
         public MainWindowViewModel()
         {
@@ -23,6 +52,28 @@ namespace thirdsentyabrya.ViewModel
             PreviouseMonth = new BindableCommand(_ => Previouse());
             NextMonth = new BindableCommand(_ => Next());
         }
+
+        private List<Day> GenerateDays(int year, int month)
+        {
+            int daysInMonth = DateTime.DaysInMonth(year, month);
+            var days = new List<Day>();
+
+            for (int i = 1; i <= daysInMonth; i++)
+            {
+                days.Add(new Day { Date = new DateTime(year, month, i) });
+            }
+
+            return days;
+        }
+
+        public void Previous()
+        {
+            Date = Date.AddMonths(-1);
+            SelectedDate = Date;
+            Days = GenerateDays(Date.Year, Date.Month);
+        }
+
+
 
         private DateTime date;
         public DateTime Date
@@ -40,12 +91,16 @@ namespace thirdsentyabrya.ViewModel
 
         public void Previouse()
         {
-           //Должно перелистываться назад
+            Date = Date.AddMonths(-1);
+            SelectedDate = Date;
+            Days = GenerateDays(Date.Year, Date.Month);
         }
 
         public void Next()
         {
-            //Должно перелистываться вперёд
+            Date = Date.AddMonths(1);
+            SelectedDate = Date;
+            Days = GenerateDays(Date.Year, Date.Month);
         }
     }
 }

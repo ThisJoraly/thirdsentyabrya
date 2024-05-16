@@ -12,11 +12,10 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\ovtsu\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\ovtsu\\.nuget\\packages"
+      "C:\\Users\\Artyom\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Artyom\\.nuget\\packages"
     ],
     "configProperties": {
-      "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
     }
   }
