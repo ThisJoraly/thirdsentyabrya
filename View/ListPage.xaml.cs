@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using thirdsentyabrya.ViewModel;
 
 namespace thirdsentyabrya.View
 {
@@ -23,6 +24,13 @@ namespace thirdsentyabrya.View
         public ListPage()
         {
             InitializeComponent();
+            var viewModel = new ListPageViewModel();
+            DataContext = viewModel;
+        }
+
+        internal bool ShowDialog()
+        {
+            return true;
         }
     }
 }

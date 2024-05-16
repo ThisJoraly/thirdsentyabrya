@@ -1,10 +1,10 @@
 ﻿<Page x:Class="thirdsentyabrya.View.ListPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:thirdsentyabrya.View"
-      mc:Ignorable="d" 
+      mc:Ignorable="d"
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ListPage">
 
@@ -15,7 +15,21 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <TextBlock Text="{Binding SelectedDay.Date}" FontSize="15" Margin="10" Grid.Row="0" VerticalAlignment="Center"/>
-        <ItemsControl Grid.Row="1" ItemsSource="{Binding Activities}">
+        <ItemsControl x:Name="itemsControl" Grid.Row="1" ItemsSource="{Binding Activities}">
+            <ItemsControl.Triggers>
+                <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ThicknessAnimation
+                                Storyboard.TargetName="itemsControl"
+                                Storyboard.TargetProperty="Margin"
+                                From="0,0,0,-50"
+                                To="0"
+                                Duration="0:0:0.5" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </ItemsControl.Triggers>
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
                     <CheckBox>

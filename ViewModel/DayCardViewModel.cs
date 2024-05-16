@@ -4,7 +4,9 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using thirdsentyabrya.Model;
+using thirdsentyabrya.View;
 using thirdsentyabrya.ViewModel.Helpers;
 
 namespace thirdsentyabrya.ViewModel
@@ -78,7 +80,18 @@ namespace thirdsentyabrya.ViewModel
 
         private void Open()
         {
-            //Открывается сохранённый день
+            var listPage = new ListPage();
+            var viewModel = new ListPageViewModel();
+            viewModel.SelectedDay = SelectedDay;
+            listPage.DataContext = viewModel;
+
+            var result = listPage.ShowDialog();
+
+            if (result)
+            {
+                SelectedDay = viewModel.SelectedDay;
+                SaveChanges();
+            }
         }
 
         private void Cancel()

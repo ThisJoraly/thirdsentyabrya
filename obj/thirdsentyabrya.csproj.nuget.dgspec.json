@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Artyom\\Source\\Repos\\thirdsentyabrya1\\thirdsentyabrya.csproj": {}
+    "C:\\Users\\Artyom\\Source\\Repos\\thirdsentyabrya2\\thirdsentyabrya.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Artyom\\Source\\Repos\\thirdsentyabrya1\\thirdsentyabrya.csproj": {
+    "C:\\Users\\Artyom\\Source\\Repos\\thirdsentyabrya2\\thirdsentyabrya.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Artyom\\Source\\Repos\\thirdsentyabrya1\\thirdsentyabrya.csproj",
+        "projectUniqueName": "C:\\Users\\Artyom\\Source\\Repos\\thirdsentyabrya2\\thirdsentyabrya.csproj",
         "projectName": "thirdsentyabrya",
-        "projectPath": "C:\\Users\\Artyom\\Source\\Repos\\thirdsentyabrya1\\thirdsentyabrya.csproj",
+        "projectPath": "C:\\Users\\Artyom\\Source\\Repos\\thirdsentyabrya2\\thirdsentyabrya.csproj",
         "packagesPath": "C:\\Users\\Artyom\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Artyom\\Source\\Repos\\thirdsentyabrya1\\obj\\",
+        "outputPath": "C:\\Users\\Artyom\\Source\\Repos\\thirdsentyabrya2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Artyom\\AppData\\Roaming\\NuGet\\NuGet.Config",
